@@ -24,7 +24,7 @@
     function onDeviceReady() {
         networkState = navigator.connection.type;
         if (networkState != 'none') {
-            var win = window.open("https://www.gyps.com.mx/Mobile/Home/");
+            var win = window.open("https://www.gyps.com.mx/Mobile/Home/", '_blank', 'location=no');
         } else {
             navigator.notification.alert('Intentelo de nuevo cuando tenga acceso a Internet', function() {
                 navigator.app.exitApp();
