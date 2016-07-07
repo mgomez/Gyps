@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Gyps</title>
+</head>
+
+<body>
+    <div id="ocsi">
+        <div class="blink">
+            <h1><img src="img/logo.png" alt=""><br><small>(Cargando)</small></h1>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script>
+    document.addEventListener('deviceready', onDeviceReady, false);
+
+    function onDeviceReady() {
+        networkState = navigator.connection.type;
+        if (networkState != 'none') {
+            var win = window.open("https://www.gyps.com.mx/Mobile/Home/");
+        } else {
+            navigator.notification.alert('Intentelo de nuevo cuando tenga acceso a Internet', function() {
+                navigator.app.exitApp();
+            }, 'Gyps', 'Ok');
+        }
+    }
+    </script>
+</body>
+
+</html>
