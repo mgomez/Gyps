@@ -24,7 +24,7 @@
     function onDeviceReady() {
         networkState = navigator.connection.type;
         if (networkState != 'none') {
-            var win = window.open("https://gyps.azurewebsites.net/Mobile/Home", '_blank', 'location=no');
+            var win = window.open("https://gyps.azurewebsites.net/Mobile/Home", '_self', 'location=yes');
         } else {
             navigator.notification.alert('Intentelo de nuevo cuando tenga acceso a Internet', function() {
                 navigator.app.exitApp();
