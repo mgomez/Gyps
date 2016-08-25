@@ -31,14 +31,11 @@
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
         <param name="URL_SCHEME" value="https://www.gyps.com.mx" />
     </gap:plugin>
-    <gap:config-file platform="android" parent="/manifest/application/activity" mode="add">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <data android:host="www.gyps.com.mx" android:scheme="https" />
-        </intent-filter>
-    </gap:config-file>
+    <feature name="Custom URL scheme">
+        <param name="id" value="cordova-plugin-customurlscheme" />
+        <param name="url" value="https://github.com/EddyVerbruggen/Custom-URL-scheme.git" />
+        <variable name="URL_SCHEME" value="https://www.gyps.com.mx" />
+    </feature>
     <!--<gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.globalization" />
