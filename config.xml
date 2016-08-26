@@ -29,12 +29,12 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
-        <param name="URL_SCHEME" value="https://www.gyps.com.mx" />
+        <param name="URL_SCHEME" value="gypsmx" />
     </gap:plugin>
     <feature name="Custom URL scheme">
         <param name="id" value="cordova-plugin-customurlscheme" />
         <param name="url" value="https://github.com/EddyVerbruggen/Custom-URL-scheme.git" />
-        <variable name="URL_SCHEME" value="https://www.gyps.com.mx" />
+        <variable name="URL_SCHEME" value="gypsmx" />
     </feature>
     <!--<gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
