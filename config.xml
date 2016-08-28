@@ -26,7 +26,7 @@
         <preference name="phonegap-version"       value="3.5.0" />
     -->
     <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <gap:plugin name="org.apache.cordova.network-information" />
+    <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
         <param name="URL_SCHEME" value="gypsmx" />
