@@ -25,7 +25,7 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
