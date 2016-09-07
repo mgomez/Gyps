@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cgomez.gyps" version="0.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cgomez.gyps" version="0.6">
     <name>Gyps</name>
     <description>App de Gyps</description>
     <author email="00.13.zkr@gmail.com" href="https://www.gyps.com.mx//">
