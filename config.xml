@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cgomez.gyps" version="0.6">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cgomez.gyps" version="1.0.5">
     <name>Gyps</name>
     <description>App de Gyps</description>
     <author email="00.13.zkr@gmail.com" href="https://www.gyps.com.mx//">
@@ -75,6 +75,10 @@
     <gap:splash gap:platform="android" gap:qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>101</string>
+    </gap:config-file>
+    <preference name="SplashScreenDelay" value="10000" />
     <access origin="*" />
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
